@@ -80,7 +80,7 @@ export function app(): express.Express {
         var seo: any = {
           title: 'Therapist Tube',
           description:
-            'The Umbrella platform for All freedom based projects worldwide',
+            'Speak with Therapists locally or worldwide Optionally speak to people around the world about various topics',
           image:
             'https://video.therapist.tube/assets/banner/Healing-Tube-Logo.jpg',
           site: 'https://video.therapist.tube/',
@@ -126,7 +126,7 @@ export function app(): express.Express {
           const pdhtml = document.createElement('div');
           pdhtml.innerHTML = post?.postdescription || post?.metadescription;
           const talent = {
-            name: post?.title || post?.albumname || 'Healing.Tube Post',
+            name: post?.title || post?.albumname || 'Therapist.Tube Post',
             description: pdhtml?.textContent || 'Post content',
             image: post?.thumbfilename || post?.metaimage || post?.imageUrl,
           };
