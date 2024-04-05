@@ -82,7 +82,7 @@ export function app(): express.Express {
           description:
             'Speak with Therapists locally or worldwide Optionally speak to people around the world about various topics',
           image:
-            'https://video.therapist.tube/assets/banner/Healing-Tube-Logo.jpg',
+            'https://therapist.tube/assets/images/profile-cover.jpg',
           site: 'https://video.therapist.tube/',
           url: 'https://video.therapist.tube' + params,
           keywords: 'TherapistTube',
