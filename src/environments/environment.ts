@@ -20,6 +20,5 @@ export const environment = {
   socketUrl: `${backendUrl}`,
   conferenceUrl: 'https://facetime.tube/',
   logoutUrl: logoutUrl
-
 };
 

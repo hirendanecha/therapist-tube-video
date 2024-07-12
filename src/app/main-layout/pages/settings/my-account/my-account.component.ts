@@ -18,9 +18,9 @@ export class MyAccountComponent {
   channelData: any = [];
   activePage = 0;
   channelId: number;
-  hasMoreData = false;
   channelList:any=[];
   countChannel:number;
+  hasMoreData = false;
   postedVideoCount: number;
   userChannelCount: number;
   constructor(
@@ -34,9 +34,8 @@ export class MyAccountComponent {
   }
 
   ngOnInit(): void {
-    this.getChannels();
     this.getPostVideosById();
-    this.getChannelByUserId();
+    this.getChannelByUserId()
   }
 
   getPostVideosById(): void {
@@ -106,7 +105,7 @@ export class MyAccountComponent {
     });
   }
   getChannels(): void {
-    const userId = JSON.parse(this.authService.getUserData() as any)?.UserID;
+    const userId = JSON.parse(this.authService.getUserData() as any)?.Id;
     const apiUrl = `${environment.apiUrl}channels/get-channels/${userId}`;
     this.commonService.get(apiUrl).subscribe({
       next: (res) => {
