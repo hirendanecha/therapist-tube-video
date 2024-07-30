@@ -37,7 +37,7 @@ export class CreateChannelComponent {
     private channelService: ChannelService,
     public authService: AuthService,
   ) {
-    this.profileId = JSON.parse(this.authService.getUserData() as any).Id;
+    this.profileId = JSON.parse(this.authService.getUserData() as any)?.profileId;
   }
 
   ngOnInit(): void {}
